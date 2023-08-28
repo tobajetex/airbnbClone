@@ -1,0 +1,128 @@
+* , *:before,*:after{
+    box-sizing: border-box
+}
+html, body{
+    margin:0;
+    padding:0;
+    font-family: poppins ,sans-serif
+}
+.nav--container{
+    display:flex;
+    box-shadow:0px 1px 9px rgba(0, 0, 0, 0.2) ;
+    align-items:center
+}
+.nav--logo{
+    min-width:50px;
+    width:20%;
+    max-width:120px;
+    margin-block:22px;
+    margin-left:2vw
+}
+/* Main Section */
+.main--container{
+    padding:2vw
+}
+.main--img--container{
+    width:95%;
+    max-width:950px;
+    margin:30px auto
+} 
+.main--img--container img{
+    width:100%
+}
+.main--container h1{
+font-size: 2.3rem;
+font-weight: 600;
+line-height: 110%;
+margin-bottom: 0;
+margin-top:0
+}
+.main--container p{
+font-size: 1rem;
+font-weight: 300;
+line-height: 110%; 
+}
+
+/*Cards Section */
+.card--container{
+    padding-inline:2vw;
+    font-size: 12px;
+    line-height: 110%;
+    flex:0 0
+    
+}
+.card--img--container{
+ width:176px;
+ height:235px;
+ position:relative
+}
+.alert{
+    position:absolute;
+    left:.5rem;
+    top:.5rem;
+    padding:4px 8px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color:white;
+    border-radius:4px
+    
+}
+
+.card--img--container .card--img{
+    width:100%;
+    height:100%;
+    border-radius:5px
+}
+.card-stats{
+    display:flex;
+    align-items: center;
+    gap:3px;
+    color: #918E9B;
+    margin-top:8px
+
+}
+.card-stats img{
+    width:16px
+}
+.card-stats span:nth-child(2){
+    color:#222
+}
+.card--container p{
+color: #222;
+}
+.card--container p:first-of-type{
+    margin:8px 0
+}
+.card--container p:last-of-type{
+    margin:0
+}
+.card--container p:last-of-type span{
+    font-weight: bold
+}
+
+/*Sectional Card layout*/
+
+.cards--layout--container{
+    padding-left:2vw;  
+}
+
+.cards--layout--container h1{
+    font-size: 1.4rem
+}
+.cards--layout{
+display:flex;
+flex-wrap: nowrap;
+justify-content: center
+}
+@media (max-width: 500px) {
+.cards--layout--container h1{
+    font-size: 1rem
+}
+.main--container h1{
+    font-size: 1.5rem
+}
+.main--container p{
+    font-size: .8rem
+}
+}
+
